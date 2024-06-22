@@ -1,14 +1,14 @@
-### Fake News Detection LLM-Based
+# Fake News Detection LLM-Based
 
-#### Overview
+## Overview
 
 This project leverages LLM for fake news detection. It includes modules for data loading, model initialization, prediction generation, and evaluation. The project utilizes Qwen and Llama models for text analysis and dynamically allocates resources based on available GPUs.
 
 本项目利用大模型进行假新闻检测，以及进行lora微调。项目包含数据加载、模型初始化、生成预测和评估，模型训练等模块。该项目使用Qwen和Llama模型进行文本分析，并根据可用的GPU动态分配资源。
 
-#### Project Structure 项目结构
+## Project Structure 项目结构
 
-##### dataset/
+### dataset/
 
 - **raw**: Contains raw data and related processing scripts. 包含原始数据和相关处理脚本。
   - **data_analysis**: Directory for data analysis scripts and results. 数据分析脚本和结果目录。
@@ -24,7 +24,7 @@ This project leverages LLM for fake news detection. It includes modules for data
     - `test.csv`: Test dataset file. 测试数据集文件。
     - `train.csv`: Training dataset file. 训练数据集文件。
 
-##### llm_based/
+### llm_based/
 
 - **vllm_run.py**: Initializes the model, processes input data, generates predictions, and evaluates results. 
   初始化模型，处理输入数据，生成预测并评估结果。
