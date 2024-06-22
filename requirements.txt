@@ -4,3 +4,4 @@ accelerate
 flash-attn
 peft
 vllm>=0.4.2
+pandas
