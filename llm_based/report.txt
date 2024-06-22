@@ -1,0 +1,182 @@
+------model: 8B----task: ['content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/12/13:56-----all time cost: 6245.391259s------
+content_based_fake: {'accuracy': 0.488, 'f1_score': 0.396, 'recall': 0.488, 'error_parse': 0}
+integration_based_fake: {'accuracy': 0.371, 'f1_score': 0.269, 'recall': 0.371, 'error_parse': 0}
+story_based_fake: {'accuracy': 0.745, 'f1_score': 0.707, 'recall': 0.745, 'error_parse': 2}
+style_based_legitimate: {'accuracy': 0.934, 'f1_score': 0.966, 'recall': 0.934, 'error_parse': 0}
+style_based_fake: {'accuracy': 0.695, 'f1_score': 0.668, 'recall': 0.695, 'error_parse': 0}
+integration_based_legitimate: {'accuracy': 0.965, 'f1_score': 0.982, 'recall': 0.965, 'error_parse': 0}
+
+------model: glm----task: ['content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/12/16:04-----all time cost: 7598.264105s------
+content_based_fake: {'accuracy': 0.499, 'f1_score': 0.431, 'recall': 0.499, 'error_parse': 0}
+integration_based_fake: {'accuracy': 0.51, 'f1_score': 0.503, 'recall': 0.51, 'error_parse': 0}
+story_based_fake: {'accuracy': 0.741, 'f1_score': 0.733, 'recall': 0.741, 'error_parse': 2}
+style_based_legitimate: {'accuracy': 0.884, 'f1_score': 0.938, 'recall': 0.884, 'error_parse': 1}
+style_based_fake: {'accuracy': 0.658, 'f1_score': 0.668, 'recall': 0.658, 'error_parse': 2}
+integration_based_legitimate: {'accuracy': 0.841, 'f1_score': 0.914, 'recall': 0.841, 'error_parse': 0}
+#从这里开始使用val_set的而不是全量数据集
+# val set  single cot
+------model: 8B----task: ['content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/19/15:39-----all time cost: 837.095042s------    #  single
+content_based_fake: {'accuracy': 0.514, 'f1_score': 0.431, 'recall': 0.514, 'error_parse': 0}
+integration_based_fake: {'accuracy': 0.396, 'f1_score': 0.307, 'recall': 0.396, 'error_parse': 0}
+story_based_fake: {'accuracy': 0.755, 'f1_score': 0.728, 'recall': 0.755, 'error_parse': 0}
+style_based_legitimate: {'accuracy': 0.934, 'f1_score': 0.966, 'recall': 0.934, 'error_parse': 0}
+style_based_fake: {'accuracy': 0.7, 'f1_score': 0.682, 'recall': 0.7, 'error_parse': 0}
+integration_based_legitimate: {'accuracy': 0.959, 'f1_score': 0.979, 'recall': 0.959, 'error_parse': 0}
+
+------model: 8B----task: ['content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/19/19:17-----all time cost: 13010.663982s------    #  cot
+content_based_fake: {'accuracy': 0.54, 'f1_score': 0.524, 'recall': 0.54, 'error_parse': 85}
+integration_based_fake: {'accuracy': 0.584, 'f1_score': 0.592, 'recall': 0.584, 'error_parse': 50}
+story_based_fake: {'accuracy': 0.641, 'f1_score': 0.668, 'recall': 0.641, 'error_parse': 138}
+style_based_legitimate: {'accuracy': 0.771, 'f1_score': 0.871, 'recall': 0.771, 'error_parse': 102}
+style_based_fake: {'accuracy': 0.564, 'f1_score': 0.596, 'recall': 0.564, 'error_parse': 143}
+integration_based_legitimate: {'accuracy': 0.724, 'f1_score': 0.84, 'recall': 0.724, 'error_parse': 121}
+
+------model: qwen----task: ['content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/19/19:30-----all time cost: 664.566284s------    #  single
+content_based_fake: {'accuracy': 0.504, 'f1_score': 0.342, 'recall': 0.504, 'error_parse': 0}
+integration_based_fake: {'accuracy': 0.344, 'f1_score': 0.196, 'recall': 0.344, 'error_parse': 0}
+story_based_fake: {'accuracy': 0.783, 'f1_score': 0.698, 'recall': 0.783, 'error_parse': 0}
+style_based_legitimate: {'accuracy': 0.999, 'f1_score': 0.999, 'recall': 0.999, 'error_parse': 0}
+style_based_fake: {'accuracy': 0.759, 'f1_score': 0.672, 'recall': 0.759, 'error_parse': 0}
+integration_based_legitimate: {'accuracy': 0.999, 'f1_score': 0.999, 'recall': 0.999, 'error_parse': 0}
+
+------model: qwen----task: ['content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/19/22:37-----all time cost: 11166.672002s------   # cot
+content_based_fake: {'accuracy': 0.516, 'f1_score': 0.38, 'recall': 0.516, 'error_parse': 42}
+integration_based_fake: {'accuracy': 0.394, 'f1_score': 0.295, 'recall': 0.394, 'error_parse': 19}
+story_based_fake: {'accuracy': 0.796, 'f1_score': 0.75, 'recall': 0.796, 'error_parse': 112}
+style_based_legitimate: {'accuracy': 0.973, 'f1_score': 0.986, 'recall': 0.973, 'error_parse': 55}
+style_based_fake: {'accuracy': 0.758, 'f1_score': 0.723, 'recall': 0.758, 'error_parse': 126}
+integration_based_legitimate: {'accuracy': 0.974, 'f1_score': 0.987, 'recall': 0.974, 'error_parse': 26}
+
+------model: qwen-sft----task: ['content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/19/23:17-----all time cost: 667.538012s------    #  single 1000step
+content_based_fake: {'accuracy': 0.505, 'f1_score': 0.345, 'recall': 0.505, 'error_parse': 0}
+integration_based_fake: {'accuracy': 0.348, 'f1_score': 0.204, 'recall': 0.348, 'error_parse': 0}
+story_based_fake: {'accuracy': 0.787, 'f1_score': 0.706, 'recall': 0.787, 'error_parse': 0}
+style_based_legitimate: {'accuracy': 0.997, 'f1_score': 0.998, 'recall': 0.997, 'error_parse': 0}
+style_based_fake: {'accuracy': 0.76, 'f1_score': 0.678, 'recall': 0.76, 'error_parse': 0}
+integration_based_legitimate: {'accuracy': 0.998, 'f1_score': 0.999, 'recall': 0.998, 'error_parse': 0}
+
+------model: qwen-sft----task: ['content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/20/11:09-----all time cost: 488.745999s------   #  single 2500step
+content_based_fake: {'accuracy': 0.509, 'f1_score': 0.352, 'recall': 0.509, 'error_parse': 0}
+integration_based_fake: {'accuracy': 0.385, 'f1_score': 0.277, 'recall': 0.385, 'error_parse': 0}
+story_based_fake: {'accuracy': 0.795, 'f1_score': 0.721, 'recall': 0.795, 'error_parse': 0}
+style_based_legitimate: {'accuracy': 1.0, 'f1_score': 1.0, 'recall': 1.0, 'error_parse': 0}
+style_based_fake: {'accuracy': 0.795, 'f1_score': 0.733, 'recall': 0.795, 'error_parse': 0}
+integration_based_legitimate: {'accuracy': 0.997, 'f1_score': 0.998, 'recall': 0.997, 'error_parse': 0}
+
+------model: qwen-sft----task: ['content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/20/12:55-----all time cost: 488.977271s------   #  single 8000step
+content_based_fake: {'accuracy': 0.939, 'f1_score': 0.939, 'recall': 0.939, 'error_parse': 0}
+integration_based_fake: {'accuracy': 0.585, 'f1_score': 0.575, 'recall': 0.585, 'error_parse': 0}
+story_based_fake: {'accuracy': 0.865, 'f1_score': 0.849, 'recall': 0.865, 'error_parse': 0}
+style_based_legitimate: {'accuracy': 0.983, 'f1_score': 0.992, 'recall': 0.983, 'error_parse': 0}
+style_based_fake: {'accuracy': 0.876, 'f1_score': 0.863, 'recall': 0.876, 'error_parse': 0}
+integration_based_legitimate: {'accuracy': 0.979, 'f1_score': 0.989, 'recall': 0.979, 'error_parse': 0}
+
+------model: qwen----task: ['gossipcop_v3_origin']-----------
+------end_time: 2024/06/20/13:57-----all time cost: 640.523477s------
+gossipcop_v3_origin: {'accuracy': 0.775, 'f1_score': 0.695, 'recall': 0.775, 'error_parse': 0}
+
+------model: qwen-sft----task: ['gossipcop_v3_origin']-----------
+------end_time: 2024/06/20/14:08-----all time cost: 640.591149s------
+gossipcop_v3_origin: {'accuracy': 0.877, 'f1_score': 0.863, 'recall': 0.877, 'error_parse': 0}
+
+------model: 8B----task: ['gossipcop_v3_origin']-----------
+------end_time: 2024/06/20/14:58-----all time cost: 683.953099s------
+gossipcop_v3_origin: {'all_acc': 0.777, 'real_acc': 0.9, 'fake_acc': 0.388, 'f1_score': 0.762, 'recall': 0.777, 'error_parse': 0}
+
+------model: glm----task: ['gossipcop_v3_origin']-----------
+------end_time: 2024/06/20/15:59-----all time cost: 810.70204s------
+gossipcop_v3_origin: {'all_acc': 0.719, 'real_acc': 0.753, 'fake_acc': 0.61, 'f1_score': 0.732, 'recall': 0.719, 'error_parse': 0}
+
+------model: qwen----task: ['gossipcop_v3_origin', 'content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/21/11:22-----all time cost: 83.662735s------
+gossipcop_v3_origin: {'all_acc': 0.791, 'real_acc': 0.962, 'fake_acc': 0.242, 'f1_score': 0.752, 'recall': 0.791, 'error_parse': 0}
+content_based_fake: {'all_acc': 0.521, 'real_acc': 0.943, 'fake_acc': 0.095, 'f1_score': 0.416, 'recall': 0.521, 'error_parse': 0}
+integration_based_fake: {'all_acc': 0.472, 'real_acc': 1.0, 'fake_acc': 0.208, 'f1_score': 0.416, 'recall': 0.472, 'error_parse': 0}
+story_based_fake: {'all_acc': 0.832, 'real_acc': 0.981, 'fake_acc': 0.354, 'f1_score': 0.804, 'recall': 0.832, 'error_parse': 0}
+style_based_legitimate: {'all_acc': 0.953, 'real_acc': 0.953, 'fake_acc': 0, 'f1_score': 0.976, 'recall': 0.953, 'error_parse': 0}
+style_based_fake: {'all_acc': 0.701, 'real_acc': 0.867, 'fake_acc': 0.179, 'f1_score': 0.673, 'recall': 0.701, 'error_parse': 0}
+integration_based_legitimate: {'all_acc': 0.968, 'real_acc': 0.968, 'fake_acc': 0, 'f1_score': 0.984, 'recall': 0.968, 'error_parse': 0}
+
+------model: qwen-sft----task: ['gossipcop_v3_origin', 'content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/21/11:25-----all time cost: 82.573922s------
+gossipcop_v3_origin: {'all_acc': 0.885, 'real_acc': 0.981, 'fake_acc': 0.576, 'f1_score': 0.875, 'recall': 0.885, 'error_parse': 0}
+content_based_fake: {'all_acc': 0.976, 'real_acc': 0.953, 'fake_acc': 1.0, 'f1_score': 0.976, 'recall': 0.976, 'error_parse': 0}
+integration_based_fake: {'all_acc': 0.75, 'real_acc': 0.958, 'fake_acc': 0.646, 'f1_score': 0.756, 'recall': 0.75, 'error_parse': 0}
+story_based_fake: {'all_acc': 0.894, 'real_acc': 0.938, 'fake_acc': 0.754, 'f1_score': 0.893, 'recall': 0.894, 'error_parse': 0}
+style_based_legitimate: {'all_acc': 0.929, 'real_acc': 0.929, 'fake_acc': 0, 'f1_score': 0.963, 'recall': 0.929, 'error_parse': 0}
+style_based_fake: {'all_acc': 0.917, 'real_acc': 0.962, 'fake_acc': 0.776, 'f1_score': 0.916, 'recall': 0.917, 'error_parse': 0}
+integration_based_legitimate: {'all_acc': 0.962, 'real_acc': 0.962, 'fake_acc': 0, 'f1_score': 0.981, 'recall': 0.962, 'error_parse': 0}
+
+------model: 8B----task: ['gossipcop_v3_origin']-----------
+------end_time: 2024/06/21/12:28-----all time cost: 1282.742762s------
+gossipcop_v3_origin: {'all_acc': 0.802, 'real_acc': 0.998, 'fake_acc': 0.017, 'f1_score': 0.719, 'recall': 0.802, 'error_parse': 7404}
+
+------model: qwen-sft----task: ['gossipcop_v3_origin', 'content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/21/18:36-----all time cost: 144.912081s------  # raw_distribute
+gossipcop_v3_origin: {'all_acc': 0.942, 'real_acc': 0.973, 'fake_acc': 0.667, 'f1_score': 0.941, 'recall': 0.942, 'error_parse': 0}
+content_based_fake: {'all_acc': 0.946, 'real_acc': 0.969, 'fake_acc': 0.821, 'f1_score': 0.946, 'recall': 0.946, 'error_parse': 0}
+integration_based_fake: {'all_acc': 0.843, 'real_acc': 0.887, 'fake_acc': 0.5, 'f1_score': 0.854, 'recall': 0.843, 'error_parse': 0}
+story_based_fake: {'all_acc': 0.888, 'real_acc': 0.947, 'fake_acc': 0.653, 'f1_score': 0.885, 'recall': 0.888, 'error_parse': 0}
+style_based_legitimate: {'all_acc': 0.938, 'real_acc': 0.938, 'fake_acc': 0, 'f1_score': 0.968, 'recall': 0.938, 'error_parse': 0}
+style_based_fake: {'all_acc': 0.892, 'real_acc': 0.95, 'fake_acc': 0.67, 'f1_score': 0.889, 'recall': 0.892, 'error_parse': 0}
+integration_based_legitimate: {'all_acc': 0.937, 'real_acc': 0.937, 'fake_acc': 0, 'f1_score': 0.967, 'recall': 0.937, 'error_parse': 0}
+
+------model: qwen----task: ['gossipcop_v3_origin', 'content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/21/18:39-----all time cost: 144.509602s------raw_distribute.csv
+gossipcop_v3_origin: {'all_acc': 0.894, 'real_acc': 0.96, 'fake_acc': 0.314, 'f1_score': 0.884, 'recall': 0.894, 'error_parse': 0}
+content_based_fake: {'all_acc': 0.828, 'real_acc': 0.969, 'fake_acc': 0.064, 'f1_score': 0.78, 'recall': 0.828, 'error_parse': 0}
+integration_based_fake: {'all_acc': 0.865, 'real_acc': 0.956, 'fake_acc': 0.154, 'f1_score': 0.845, 'recall': 0.865, 'error_parse': 0}
+story_based_fake: {'all_acc': 0.826, 'real_acc': 0.972, 'fake_acc': 0.248, 'f1_score': 0.791, 'recall': 0.826, 'error_parse': 0}
+style_based_legitimate: {'all_acc': 0.95, 'real_acc': 0.95, 'fake_acc': 0, 'f1_score': 0.974, 'recall': 0.95, 'error_parse': 0}
+style_based_fake: {'all_acc': 0.754, 'real_acc': 0.892, 'fake_acc': 0.223, 'f1_score': 0.733, 'recall': 0.754, 'error_parse': 0}
+integration_based_legitimate: {'all_acc': 0.973, 'real_acc': 0.973, 'fake_acc': 0, 'f1_score': 0.986, 'recall': 0.973, 'error_parse': 0}
+
+------model: qwen-sft----task: ['gossipcop_v3_origin', 'content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/21/19:13-----all time cost: 140.001305s------same_distribute.csv
+gossipcop_v3_origin: {'all_acc': 0.804, 'real_acc': 0.984, 'fake_acc': 0.624, 'f1_score': 0.797, 'recall': 0.804, 'error_parse': 0}
+content_based_fake: {'all_acc': 0.926, 'real_acc': 0.972, 'fake_acc': 0.88, 'f1_score': 0.926, 'recall': 0.926, 'error_parse': 0}
+integration_based_fake: {'all_acc': 0.674, 'real_acc': 0.887, 'fake_acc': 0.5, 'f1_score': 0.665, 'recall': 0.674, 'error_parse': 0}
+story_based_fake: {'all_acc': 0.768, 'real_acc': 0.932, 'fake_acc': 0.604, 'f1_score': 0.762, 'recall': 0.768, 'error_parse': 0}
+style_based_legitimate: {'all_acc': 0.944, 'real_acc': 0.944, 'fake_acc': 0, 'f1_score': 0.971, 'recall': 0.944, 'error_parse': 0}
+style_based_fake: {'all_acc': 0.802, 'real_acc': 0.936, 'fake_acc': 0.668, 'f1_score': 0.798, 'recall': 0.802, 'error_parse': 0}
+integration_based_legitimate: {'all_acc': 0.948, 'real_acc': 0.948, 'fake_acc': 0, 'f1_score': 0.973, 'recall': 0.948, 'error_parse': 0}
+
+------model: qwen----task: ['gossipcop_v3_origin', 'content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/21/19:16-----all time cost: 140.362823s------same_distribute.csv
+gossipcop_v3_origin: {'all_acc': 0.652, 'real_acc': 0.964, 'fake_acc': 0.34, 'f1_score': 0.614, 'recall': 0.652, 'error_parse': 0}
+content_based_fake: {'all_acc': 0.522, 'real_acc': 0.968, 'fake_acc': 0.076, 'f1_score': 0.403, 'recall': 0.522, 'error_parse': 0}
+integration_based_fake: {'all_acc': 0.513, 'real_acc': 0.956, 'fake_acc': 0.152, 'f1_score': 0.428, 'recall': 0.513, 'error_parse': 0}
+story_based_fake: {'all_acc': 0.6, 'real_acc': 0.976, 'fake_acc': 0.224, 'f1_score': 0.534, 'recall': 0.6, 'error_parse': 0}
+style_based_legitimate: {'all_acc': 0.94, 'real_acc': 0.94, 'fake_acc': 0, 'f1_score': 0.969, 'recall': 0.94, 'error_parse': 0}
+style_based_fake: {'all_acc': 0.568, 'real_acc': 0.864, 'fake_acc': 0.272, 'f1_score': 0.527, 'recall': 0.568, 'error_parse': 0}
+integration_based_legitimate: {'all_acc': 0.976, 'real_acc': 0.976, 'fake_acc': 0, 'f1_score': 0.988, 'recall': 0.976, 'error_parse': 0}
+
+------model: qwen-sft----task: ['gossipcop_v3_origin', 'content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/21/22:03-----all time cost: 5705.359587s------all_val.csv
+gossipcop_v3_origin: {'all_acc': 0.874, 'real_acc': 0.962, 'fake_acc': 0.595, 'f1_score': 0.866, 'recall': 0.874, 'error_parse': 0}
+content_based_fake: {'all_acc': 0.935, 'real_acc': 0.963, 'fake_acc': 0.907, 'f1_score': 0.935, 'recall': 0.935, 'error_parse': 0}
+integration_based_fake: {'all_acc': 0.647, 'real_acc': 0.884, 'fake_acc': 0.528, 'f1_score': 0.653, 'recall': 0.647, 'error_parse': 0}
+story_based_fake: {'all_acc': 0.859, 'real_acc': 0.944, 'fake_acc': 0.587, 'f1_score': 0.852, 'recall': 0.859, 'error_parse': 0}
+style_based_legitimate: {'all_acc': 0.945, 'real_acc': 0.945, 'fake_acc': 0, 'f1_score': 0.972, 'recall': 0.945, 'error_parse': 0}
+style_based_fake: {'all_acc': 0.872, 'real_acc': 0.949, 'fake_acc': 0.629, 'f1_score': 0.866, 'recall': 0.872, 'error_parse': 0}
+integration_based_legitimate: {'all_acc': 0.93, 'real_acc': 0.93, 'fake_acc': 0, 'f1_score': 0.964, 'recall': 0.93, 'error_parse': 0}
+
+------model: qwen----task: ['gossipcop_v3_origin', 'content_based_fake', 'integration_based_fake', 'story_based_fake', 'style_based_legitimate', 'style_based_fake', 'integration_based_legitimate']-----------
+------end_time: 2024/06/21/23:39-----all time cost: 5694.433897s------all_val.csv
+gossipcop_v3_origin: {'all_acc': 0.81, 'real_acc': 0.961, 'fake_acc': 0.335, 'f1_score': 0.783, 'recall': 0.81, 'error_parse': 0}
+content_based_fake: {'all_acc': 0.515, 'real_acc': 0.961, 'fake_acc': 0.069, 'f1_score': 0.394, 'recall': 0.515, 'error_parse': 0}
+integration_based_fake: {'all_acc': 0.435, 'real_acc': 0.954, 'fake_acc': 0.176, 'f1_score': 0.372, 'recall': 0.435, 'error_parse': 0}
+story_based_fake: {'all_acc': 0.784, 'real_acc': 0.967, 'fake_acc': 0.202, 'f1_score': 0.738, 'recall': 0.784, 'error_parse': 0}
+style_based_legitimate: {'all_acc': 0.969, 'real_acc': 0.969, 'fake_acc': 0, 'f1_score': 0.984, 'recall': 0.969, 'error_parse': 0}
+style_based_fake: {'all_acc': 0.733, 'real_acc': 0.89, 'fake_acc': 0.239, 'f1_score': 0.706, 'recall': 0.733, 'error_parse': 0}
+integration_based_legitimate: {'all_acc': 0.967, 'real_acc': 0.967, 'fake_acc': 0, 'f1_score': 0.983, 'recall': 0.967, 'error_parse': 0}
+
